@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGRESO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <style>
+        .disclaimer{
+    position:absolute;
+    top: 3700px;
+}
+        form{
+            text-align: center;
+            background-color: black;
+            height: 100%;
+            width: auto;
+            grid-area: formu;
+            padding: 0%;
+         
+        }
+        #tra{
+            height: 150px !important;
+            font-size: x-large;
+            text-align: center;
+            padding: 0%;
+        }
+        body{
+            padding-right: 10px;
+            display: grid;
+            padding-right: 5%;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+             "header header header"
+             "formu formu formu"
+             "formu formu formu"
+             "formu formu formu "
+            
+            ;
+        }
+        .header{
+            grid-area: header;
+        }
+        body{
+      background-color: black;
+      color: white;
+      text-align: center;
+  }
+      .video {
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ z-index: -10;
+ visibility: visible;
+ }
+    </style>
+
+</head>
+<body>
+     <video src="/VIDEOS/video2.mp4" autoplay loop muted class="video">  </video>
+    <div class="header">
+
+           <img src="b.png" width="15%"  > 
+            <a href="index.html">  Inicio </a> 
+
+  </div>
+
+
+    
+    <script>
+        function usrpas(){
+            let correo  = document.form1.txt.value ;
+        if (document.form1.txt.value= correo && document.form1.num.value=="#0101A001"
+        || document.form1.txt.value=="AstrologickReset" && document.form1.num.value=="Babalon510.")
+        //CONTRASEÑAS DE USUARIOS:
+        /*
+        
+        
+    
+        */
+       // FIN DE CONTRASEÑAS DE USUARIOS
+        {
+            window.location="666BIENVENIDOSAASTROLOGICK.html"
+            
+        }
+         
+        else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+        }
+        document.oncontextmenu=new Function("return false");
+        </script>
+         
+        <form name="form1" class=" form-check">
+            <label class="form-label" >CORREO ELECTRÓNICO  </label>
+        <input type="text" name="txt" class="form-control" id="tra"> <br>
+        <label class="form-label">CONTRASEÑA </label>
+        <input type="text" name="num" class="form-control" id="tra"><br>
+        <input type="button" value="INGRESAR" onclick="usrpas()" class="form-control">
+        <br>
+        <br>
+        <br>
+        SU CONTRASEÑA ES ÚNICA E INSTRANFERIBLE
+        GUARDELA BIEN, ÉSCRIBALA YA QUE NO SE PUEDE RECUPERAR .
+        </form>
+</body>
+</html>

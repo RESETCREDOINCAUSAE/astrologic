@@ -1,0 +1,3211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border: #db700c 12px solid;
+      text-align: center;
+      width: 100% !important;
+      max-width: 100% !important;
+      color: white;
+      background-color: black !important;
+    }
+
+    @media (max-width: 600px) {
+      table {
+        width: 40% !important;
+        max-width: 40% !important;
+        height: 100%;
+        background-color: black;
+        color: white;
+        ;
+      }
+    }
+ .disclaimer{
+    position:absolute;
+    top: 3700px;
+}
+    a {
+      color: aliceblue !important;
+
+    }
+
+    td,
+    th {
+      border: rgb(121, 45, 45) 1px solid;
+    }
+
+    H6 {
+      text-align: center;
+      background-color: black;
+      font-family: cursive;
+      color: bisque;
+      height: 100%;
+      font-size: medium;
+    }
+
+    body {
+      padding: 1%;
+      background-color: gray;
+    }
+
+    #boton {
+      background-color: #db700c;
+    }
+
+    #mySearch {
+      width: 100%;
+      font-size: 18px;
+      padding: 11px;
+      border: 1px solid #ddd;
+    }
+  </style>
+  <script type="text/javascript" src="FUNCIONMAIN.js"></script>
+</head>
+
+<body>
+  <span><img src="credo.jpg" width="8%"> </span>
+  <BUTTON id="boton"><a href="index.html"> INICIO</a> </BUTTON>
+
+OPRIME CONTROL-F PARA BUSCAR POR NOMBRE, AUTOR O DISPONIBILIDAD
+ <h6> LIBROS DE LA BIBLIOTECA Y DISPONIBILIDAD</h6>
+  <table id="myTable">
+
+    <tr>
+     
+      <th>ID </th>
+      <th>AUTOR</th>
+      <th>NOMBRE</th>
+      <th>EDITORIAL</th>
+      <th> DISPONIBILIDAD </th>
+    </tr>
+    <tr>
+
+      <td>01</td>
+      <td id="uno-autor">
+        <script>document.getElementById("uno-autor").innerHTML =
+            books1.Autor;
+        </script>
+      </td>
+      <td id="uno-nombre">
+        <script>document.getElementById("uno-nombre").innerHTML =
+            books1.Nombre;
+        </script>
+      </td>
+      <td id="uno-editorial">
+        <script>document.getElementById("uno-editorial").innerHTML =
+            books1.Editorial;
+        </script>
+      </td>
+      <td id="uno-disponibilidad">
+        <script>document.getElementById("uno-disponibilidad").innerHTML =
+            books1.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <tr>
+      <td>02</td>
+      <td id="dos-autor">
+        <script>document.getElementById("dos-autor").innerHTML =
+            books2.Autor;
+        </script>
+      </td>
+      <td id="dos-nombre">
+        <script>document.getElementById("dos-nombre").innerHTML =
+            books2.Nombre;
+        </script>
+      </td>
+      <td id="dos-editorial">
+        <script>document.getElementById("dos-editorial").innerHTML =
+            books2.Editorial;
+        </script>
+      </td>
+      <td id="dos-disponibilidad">
+        <script>document.getElementById("dos-disponibilidad").innerHTML =
+            books2.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td id="tres-autor">
+        <script>document.getElementById("tres-autor").innerHTML =
+            books3.Autor;
+        </script>
+      </td>
+      <td id="tres-nombre">
+        <script>document.getElementById("tres-nombre").innerHTML =
+            books3.Nombre;
+        </script>
+      </td>
+      <td id="tres-editorial">
+        <script>document.getElementById("tres-editorial").innerHTML =
+            books3.Editorial;
+        </script>
+      </td>
+      <td id="tres-disponibilidad">
+        <script>document.getElementById("tres-disponibilidad").innerHTML =
+            books3.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td id="cuatro-autor">
+        <script>document.getElementById("cuatro-autor").innerHTML =
+            books4.Autor;
+        </script>
+      </td>
+      <td id="cuatro-nombre">
+        <script>document.getElementById("cuatro-nombre").innerHTML =
+            books4.Nombre;
+        </script>
+      </td>
+      <td id="cuatro-editorial">
+        <script>document.getElementById("cuatro-editorial").innerHTML =
+            books4.Editorial;
+        </script>
+      </td>
+      <td id="cuatro-disponibilidad">
+        <script>document.getElementById("cuatro-disponibilidad").innerHTML =
+            books4.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO CINCO-->
+    <tr>
+      <td>05</td>
+      <td id="cinco-autor">
+        <script>document.getElementById("cinco-autor").innerHTML =
+            books5.Autor;
+        </script>
+      </td>
+      <td id="cinco-nombre">
+        <script>document.getElementById("cinco-nombre").innerHTML =
+            books5.Nombre;
+        </script>
+      </td>
+      <td id="cinco-editorial">
+        <script>document.getElementById("cinco-editorial").innerHTML =
+            books5.Editorial;
+        </script>
+      </td>
+      <td id="cinco-disponibilidad">
+        <script>document.getElementById("cinco-disponibilidad").innerHTML =
+            books5.Disponibilidad;
+        </script>
+      </td>
+
+    </tr>
+    <!-- OBJETO NÚMERO SEIS-->
+
+    <tr>
+      <td>06</td>
+      <td id="seis-autor">
+        <script>document.getElementById("seis-autor").innerHTML =
+            books6.Autor;
+        </script>
+      </td>
+      <td id="seis-nombre">
+        <script>document.getElementById("seis-nombre").innerHTML =
+            books6.Nombre;
+        </script>
+      </td>
+      <td id="seis-editorial">
+        <script>document.getElementById("seis-editorial").innerHTML =
+            books6.Editorial;
+        </script>
+      </td>
+      <td id="seis-disponibilidad">
+        <script>document.getElementById("seis-disponibilidad").innerHTML =
+            books6.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO SIETE-->
+
+    <tr>
+      <td>07</td>
+      <td id="siete-autor">
+        <script>document.getElementById("siete-autor").innerHTML =
+            books7.Autor;
+        </script>
+      </td>
+      <td id="siete-nombre">
+        <script>document.getElementById("siete-nombre").innerHTML =
+            books7.Nombre;
+        </script>
+      </td>
+      <td id="siete-editorial">
+        <script>document.getElementById("siete-editorial").innerHTML =
+            books7.Editorial;
+        </script>
+      </td>
+      <td id="siete-disponibilidad">
+        <script>document.getElementById("siete-disponibilidad").innerHTML =
+            books7.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO OCHO-->
+
+    <tr>
+      <td>08</td>
+      <td id="ocho-autor">
+        <script>document.getElementById("ocho-autor").innerHTML =
+            books8.Autor;
+        </script>
+      </td>
+      <td id="ocho-nombre">
+        <script>document.getElementById("ocho-nombre").innerHTML =
+            books8.Nombre;
+        </script>
+      </td>
+      <td id="ocho-editorial">
+        <script>document.getElementById("ocho-editorial").innerHTML =
+            books8.Editorial;
+        </script>
+      </td>
+      <td id="ocho-disponibilidad">
+        <script>document.getElementById("ocho-disponibilidad").innerHTML =
+            books8.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO NUEVE-->
+
+    <tr>
+      <td>09</td>
+      <td id="nueve-autor">
+        <script>document.getElementById("nueve-autor").innerHTML =
+            books9.Autor;
+        </script>
+      </td>
+      <td id="nueve-nombre">
+        <script>document.getElementById("nueve-nombre").innerHTML =
+            books9.Nombre;
+        </script>
+      </td>
+      <td id="nueve-editorial">
+        <script>document.getElementById("nueve-editorial").innerHTML =
+            books9.Editorial;
+        </script>
+      </td>
+      <td id="nueve-disponibilidad">
+        <script>document.getElementById("nueve-disponibilidad").innerHTML =
+            books9.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO DIEZ-->
+
+    <tr>
+      <td>10</td>
+      <td id="diez-autor">
+        <script>document.getElementById("diez-autor").innerHTML =
+            books10.Autor;
+        </script>
+      </td>
+      <td id="diez-nombre">
+        <script>document.getElementById("diez-nombre").innerHTML =
+            books10.Nombre;
+        </script>
+      </td>
+      <td id="diez-editorial">
+        <script>document.getElementById("diez-editorial").innerHTML =
+            books10.Editorial;
+        </script>
+      </td>
+      <td id="diez-disponibilidad">
+        <script>document.getElementById("diez-disponibilidad").innerHTML =
+            books10.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO ONCE-->
+
+    <tr>
+      <td>11</td>
+      <td id="once-autor">
+        <script>document.getElementById("once-autor").innerHTML =
+            books11.Autor;
+        </script>
+      </td>
+      <td id="once-nombre">
+        <script>document.getElementById("once-nombre").innerHTML =
+            books11.Nombre;
+        </script>
+      </td>
+      <td id="once-editorial">
+        <script>document.getElementById("once-editorial").innerHTML =
+            books11.Editorial;
+        </script>
+      </td>
+      <td id="once-disponibilidad">
+        <script>document.getElementById("once-disponibilidad").innerHTML =
+            books11.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO DOCE-->
+
+    <tr>
+      <td>12</td>
+      <td id="doce-autor">
+        <script>document.getElementById("doce-autor").innerHTML =
+            books12.Autor;
+        </script>
+      </td>
+      <td id="doce-nombre">
+        <script>document.getElementById("doce-nombre").innerHTML =
+            books12.Nombre;
+        </script>
+      </td>
+      <td id="doce-editorial">
+        <script>document.getElementById("doce-editorial").innerHTML =
+            books12.Editorial;
+        </script>
+      </td>
+      <td id="doce-disponibilidad">
+        <script>document.getElementById("doce-disponibilidad").innerHTML =
+            books12.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO TRECE-->
+
+    <tr>
+      <td>13</td>
+      <td id="trece-autor">
+        <script>document.getElementById("trece-autor").innerHTML =
+            books13.Autor;
+        </script>
+      </td>
+      <td id="trece-nombre">
+        <script>document.getElementById("trece-nombre").innerHTML =
+            books13.Nombre;
+        </script>
+      </td>
+      <td id="trece-editorial">
+        <script>document.getElementById("trece-editorial").innerHTML =
+            books13.Editorial;
+        </script>
+      </td>
+      <td id="trece-disponibilidad">
+        <script>document.getElementById("trece-disponibilidad").innerHTML =
+            books13.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO CATORCE-->
+
+    <tr>
+      <td>14</td>
+      <td id="catorce-autor">
+        <script>document.getElementById("catorce-autor").innerHTML =
+            books14.Autor;
+        </script>
+      </td>
+      <td id="catorce-nombre">
+        <script>document.getElementById("catorce-nombre").innerHTML =
+            books14.Nombre;
+        </script>
+      </td>
+      <td id="catorce-editorial">
+        <script>document.getElementById("catorce-editorial").innerHTML =
+            books14.Editorial;
+        </script>
+      </td>
+      <td id="catorce-disponibilidad">
+        <script>document.getElementById("catorce-disponibilidad").innerHTML =
+            books14.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO QUINCE-->
+
+    <tr>
+      <td>15</td>
+      <td id="quince-autor">
+        <script>document.getElementById("quince-autor").innerHTML =
+            books15.Autor;
+        </script>
+      </td>
+      <td id="quince-nombre">
+        <script>document.getElementById("quince-nombre").innerHTML =
+            books15.Nombre;
+        </script>
+      </td>
+      <td id="quince-editorial">
+        <script>document.getElementById("quince-editorial").innerHTML =
+            books15.Editorial;
+        </script>
+      </td>
+      <td id="quince-disponibilidad">
+        <script>document.getElementById("quince-disponibilidad").innerHTML =
+            books15.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO DIECISEIS-->
+
+    <tr>
+      <td>16</td>
+      <td id="dieciseis-autor">
+        <script>document.getElementById("dieciseis-autor").innerHTML =
+            books16.Autor;
+        </script>
+      </td>
+      <td id="dieciseis-nombre">
+        <script>document.getElementById("dieciseis-nombre").innerHTML =
+            books16.Nombre;
+        </script>
+      </td>
+      <td id="dieciseis-editorial">
+        <script>document.getElementById("dieciseis-editorial").innerHTML =
+            books16.Editorial;
+        </script>
+      </td>
+      <td id="dieciseis-disponibilidad">
+        <script>document.getElementById("dieciseis-disponibilidad").innerHTML =
+            books16.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO DIECISIETE-->
+
+    <tr>
+      <td>17</td>
+      <td id="diecisiete-autor">
+        <script>document.getElementById("diecisiete-autor").innerHTML =
+            books17.Autor;
+        </script>
+      </td>
+      <td id="diecisiete-nombre">
+        <script>document.getElementById("diecisiete-nombre").innerHTML =
+            books17.Nombre;
+        </script>
+      </td>
+      <td id="diecisiete-editorial">
+        <script>document.getElementById("diecisiete-editorial").innerHTML =
+            books17.Editorial;
+        </script>
+      </td>
+      <td id="diecisiete-disponibilidad">
+        <script>document.getElementById("diecisiete-disponibilidad").innerHTML =
+            books17.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO DIECIOCHO-->
+
+    <tr>
+      <td>18</td>
+      <td id="dieciocho-autor">
+        <script>document.getElementById("dieciocho-autor").innerHTML =
+            books18.Autor;
+        </script>
+      </td>
+      <td id="dieciocho-nombre">
+        <script>document.getElementById("dieciocho-nombre").innerHTML =
+            books18.Nombre;
+        </script>
+      </td>
+      <td id="dieciocho-editorial">
+        <script>document.getElementById("dieciocho-editorial").innerHTML =
+            books18.Editorial;
+        </script>
+      </td>
+      <td id="dieciocho-disponibilidad">
+        <script>document.getElementById("dieciocho-disponibilidad").innerHTML =
+            books18.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO DIECINUEVE-->
+
+    <tr>
+      <td>19</td>
+      <td id="diecinueve-autor">
+        <script>document.getElementById("diecinueve-autor").innerHTML =
+            books19.Autor;
+        </script>
+      </td>
+      <td id="diecinueve-nombre">
+        <script>document.getElementById("diecinueve-nombre").innerHTML =
+            books19.Nombre;
+        </script>
+      </td>
+      <td id="diecinueve-editorial">
+        <script>document.getElementById("diecinueve-editorial").innerHTML =
+            books19.Editorial;
+        </script>
+      </td>
+      <td id="diecinueve-disponibilidad">
+        <script>document.getElementById("diecinueve-disponibilidad").innerHTML =
+            books19.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO VEINTE-->
+
+    <tr>
+      <td>20</td>
+      <td id="veinte-autor">
+        <script>document.getElementById("veinte-autor").innerHTML =
+            books20.Autor;
+        </script>
+      </td>
+      <td id="veinte-nombre">
+        <script>document.getElementById("veinte-nombre").innerHTML =
+            books20.Nombre;
+        </script>
+      </td>
+      <td id="veinte-editorial">
+        <script>document.getElementById("veinte-editorial").innerHTML =
+            books20.Editorial;
+        </script>
+      </td>
+      <td id="veinte-disponibilidad">
+        <script>document.getElementById("veinte-disponibilidad").innerHTML =
+            books20.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO VEINTIUNO-->
+
+    <tr>
+      <td>21</td>
+      <td id="veintiuno-autor">
+        <script>document.getElementById("veintiuno-autor").innerHTML =
+            books21.Autor;
+        </script>
+      </td>
+      <td id="veintiuno-nombre">
+        <script>document.getElementById("veintiuno-nombre").innerHTML =
+            books21.Nombre;
+        </script>
+      </td>
+      <td id="veintiuno-editorial">
+        <script>document.getElementById("veintiuno-editorial").innerHTML =
+            books21.Editorial;
+        </script>
+      </td>
+      <td id="veintiuno-disponibilidad">
+        <script>document.getElementById("veintiuno-disponibilidad").innerHTML =
+            books21.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO VENTIDOS-->
+
+    <tr>
+      <td>22</td>
+      <td id="veintidos-autor">
+        <script>document.getElementById("veintidos-autor").innerHTML =
+            books22.Autor;
+        </script>
+      </td>
+      <td id="veintidos-nombre">
+        <script>document.getElementById("veintidos-nombre").innerHTML =
+            books22.Nombre;
+        </script>
+      </td>
+      <td id="veintidos-editorial">
+        <script>document.getElementById("veintidos-editorial").innerHTML =
+            books22.Editorial;
+        </script>
+      </td>
+      <td id="veintidos-disponibilidad">
+        <script>document.getElementById("veintidos-disponibilidad").innerHTML =
+            books22.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO VENTITRES-->
+
+    <tr>
+      <td>23</td>
+      <td id="23-autor">
+        <script>document.getElementById("23-autor").innerHTML =
+            books23.Autor;
+        </script>
+      </td>
+      <td id="23-nombre">
+        <script>document.getElementById("23-nombre").innerHTML =
+            books23.Nombre;
+        </script>
+      </td>
+      <td id="23-editorial">
+        <script>document.getElementById("23-editorial").innerHTML =
+            books23.Editorial;
+        </script>
+      </td>
+      <td id="23-disponibilidad">
+        <script>document.getElementById("23-disponibilidad").innerHTML =
+            books23.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO VENTICUATRO-->
+
+    <tr>
+      <td>24</td>
+      <td id="24-autor">
+        <script>document.getElementById("24-autor").innerHTML =
+            books24.Autor;
+        </script>
+      </td>
+      <td id="24-nombre">
+        <script>document.getElementById("24-nombre").innerHTML =
+            books24.Nombre;
+        </script>
+      </td>
+      <td id="24-editorial">
+        <script>document.getElementById("24-editorial").innerHTML =
+            books24.Editorial;
+        </script>
+      </td>
+      <td id="24-disponibilidad">
+        <script>document.getElementById("24-disponibilidad").innerHTML =
+            books24.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO VENTICINCO-->
+
+    <tr>
+      <td> 25</td>
+      <td id="25-autor">
+        <script>document.getElementById("25-autor").innerHTML =
+            books25.Autor;
+        </script>
+      </td>
+      <td id="25-nombre">
+        <script>document.getElementById("25-nombre").innerHTML =
+            books25.Nombre;
+        </script>
+      </td>
+      <td id="25-editorial">
+        <script>document.getElementById("25-editorial").innerHTML =
+            books25.Editorial;
+        </script>
+      </td>
+      <td id="25-disponibilidad">
+        <script>document.getElementById("25-disponibilidad").innerHTML =
+            books25.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO VENTISEIS-->
+
+    <tr>
+      <td>26</td>
+      <td id="26-autor">
+        <script>document.getElementById("26-autor").innerHTML =
+            books26.Autor;
+        </script>
+      </td>
+      <td id="26-nombre">
+        <script>document.getElementById("26-nombre").innerHTML =
+            books26.Nombre;
+        </script>
+      </td>
+      <td id="26-editorial">
+        <script>document.getElementById("26-editorial").innerHTML =
+            books26.Editorial;
+        </script>
+      </td>
+      <td id="26-disponibilidad">
+        <script>document.getElementById("26-disponibilidad").innerHTML =
+            books26.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO VENTISIETE-->
+
+    <tr>
+      <td>27</td>
+      <td id="27-autor">
+        <script>document.getElementById("27-autor").innerHTML =
+            books27.Autor;
+        </script>
+      </td>
+      <td id="27-nombre">
+        <script>document.getElementById("27-nombre").innerHTML =
+            books27.Nombre;
+        </script>
+      </td>
+      <td id="27-editorial">
+        <script>document.getElementById("27-editorial").innerHTML =
+            books27.Editorial;
+        </script>
+      </td>
+      <td id="27-disponibilidad">
+        <script>document.getElementById("27-disponibilidad").innerHTML =
+            books27.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO VENTIOCHO-->
+
+    <tr>
+      <td>28</td>
+      <td id="28-autor">
+        <script>document.getElementById("28-autor").innerHTML =
+            books28.Autor;
+        </script>
+      </td>
+      <td id="28-nombre">
+        <script>document.getElementById("28-nombre").innerHTML =
+            books28.Nombre;
+        </script>
+      </td>
+      <td id="28-editorial">
+        <script>document.getElementById("28-editorial").innerHTML =
+            books28.Editorial;
+        </script>
+      </td>
+      <td id="28-disponibilidad">
+        <script>document.getElementById("28-disponibilidad").innerHTML =
+            books28.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO VENTINUEVE-->
+
+    <tr>
+      <td>29</td>
+      <td id="29-autor">
+        <script>document.getElementById("29-autor").innerHTML =
+            books29.Autor;
+        </script>
+      </td>
+      <td id="29-nombre">
+        <script>document.getElementById("29-nombre").innerHTML =
+            books29.Nombre;
+        </script>
+      </td>
+      <td id="29-editorial">
+        <script>document.getElementById("29-editorial").innerHTML =
+            books29.Editorial;
+        </script>
+      </td>
+      <td id="29-disponibilidad">
+        <script>document.getElementById("29-disponibilidad").innerHTML =
+            books29.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO TREINTA-->
+
+    <tr>
+      <td>30</td>
+      <td id="30-autor">
+        <script>document.getElementById("30-autor").innerHTML =
+            books30.Autor;
+        </script>
+      </td>
+      <td id="30-nombre">
+        <script>document.getElementById("30-nombre").innerHTML =
+            books30.Nombre;
+        </script>
+      </td>
+      <td id="30-editorial">
+        <script>document.getElementById("30-editorial").innerHTML =
+            books30.Editorial;
+        </script>
+      </td>
+      <td id="30-disponibilidad">
+        <script>document.getElementById("30-disponibilidad").innerHTML =
+            books30.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO TRENTA Y UNO-->
+
+    <tr>
+      <td>31</td>
+      <td id="31-autor">
+        <script>document.getElementById("31-autor").innerHTML =
+            books31.Autor;
+        </script>
+      </td>
+      <td id="31-nombre">
+        <script>document.getElementById("31-nombre").innerHTML =
+            books31.Nombre;
+        </script>
+      </td>
+      <td id="31-editorial">
+        <script>document.getElementById("31-editorial").innerHTML =
+            books31.Editorial;
+        </script>
+      </td>
+      <td id="31-disponibilidad">
+        <script>document.getElementById("31-disponibilidad").innerHTML =
+            books31.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO TRENTA Y DOS-->
+
+    <tr>
+      <td>32</td>
+      <td id="32-autor">
+        <script>document.getElementById("32-autor").innerHTML =
+            books32.Autor;
+        </script>
+      </td>
+      <td id="32-nombre">
+        <script>document.getElementById("32-nombre").innerHTML =
+            books32.Nombre;
+        </script>
+      </td>
+      <td id="32-editorial">
+        <script>document.getElementById("32-editorial").innerHTML =
+            books32.Editorial;
+        </script>
+      </td>
+      <td id="32-disponibilidad">
+        <script>document.getElementById("32-disponibilidad").innerHTML =
+            books32.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO TRENTA Y TRES-->
+
+    <tr>
+      <td>33</td>
+      <td id="33-autor">
+        <script>document.getElementById("33-autor").innerHTML =
+            books33.Autor;
+        </script>
+      </td>
+      <td id="33-nombre">
+        <script>document.getElementById("33-nombre").innerHTML =
+            books33.Nombre;
+        </script>
+      </td>
+      <td id="33-editorial">
+        <script>document.getElementById("33-editorial").innerHTML =
+            books33.Editorial;
+        </script>
+      </td>
+      <td id="33-disponibilidad">
+        <script>document.getElementById("33-disponibilidad").innerHTML =
+            books33.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO TRENTA Y CUATRO-->
+
+    <tr>
+      <td>34</td>
+      <td id="34-autor">
+        <script>document.getElementById("34-autor").innerHTML =
+            books34.Autor;
+        </script>
+      </td>
+      <td id="34-nombre">
+        <script>document.getElementById("34-nombre").innerHTML =
+            books34.Nombre;
+        </script>
+      </td>
+      <td id="34-editorial">
+        <script>document.getElementById("34-editorial").innerHTML =
+            books34.Editorial;
+        </script>
+      </td>
+      <td id="34-disponibilidad">
+        <script>document.getElementById("34-disponibilidad").innerHTML =
+            books34.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO TRENTA Y CINCO-->
+
+    <tr>
+      <td> 35</td>
+      <td id="35-autor">
+        <script>document.getElementById("35-autor").innerHTML =
+            books35.Autor;
+        </script>
+      </td>
+      <td id="35-nombre">
+        <script>document.getElementById("35-nombre").innerHTML =
+            books35.Nombre;
+        </script>
+      </td>
+      <td id="35-editorial">
+        <script>document.getElementById("35-editorial").innerHTML =
+            books35.Editorial;
+        </script>
+      </td>
+      <td id="35-disponibilidad">
+        <script>document.getElementById("35-disponibilidad").innerHTML =
+            books35.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 36-->
+
+    <tr>
+      <td>36</td>
+      <td id="36-autor">
+        <script>document.getElementById("36-autor").innerHTML =
+            books36.Autor;
+        </script>
+      </td>
+      <td id="36-nombre">
+        <script>document.getElementById("36-nombre").innerHTML =
+            books36.Nombre;
+        </script>
+      </td>
+      <td id="36-editorial">
+        <script>document.getElementById("36-editorial").innerHTML =
+            books36.Editorial;
+        </script>
+      </td>
+      <td id="36-disponibilidad">
+        <script>document.getElementById("36-disponibilidad").innerHTML =
+            books36.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 37-->
+
+    <tr>
+      <td>37</td>
+      <td id="37-autor">
+        <script>document.getElementById("37-autor").innerHTML =
+            books37.Autor;
+        </script>
+      </td>
+      <td id="37-nombre">
+        <script>document.getElementById("37-nombre").innerHTML =
+            books37.Nombre;
+        </script>
+      </td>
+      <td id="37-editorial">
+        <script>document.getElementById("37-editorial").innerHTML =
+            books37.Editorial;
+        </script>
+      </td>
+      <td id="37-disponibilidad">
+        <script>document.getElementById("37-disponibilidad").innerHTML =
+            books37.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 38-->
+
+    <tr>
+      <td>38</td>
+      <td id="38-autor">
+        <script>document.getElementById("38-autor").innerHTML =
+            books38.Autor;
+        </script>
+      </td>
+      <td id="38-nombre">
+        <script>document.getElementById("38-nombre").innerHTML =
+            books38.Nombre;
+        </script>
+      </td>
+      <td id="38-editorial">
+        <script>document.getElementById("38-editorial").innerHTML =
+            books38.Editorial;
+        </script>
+      </td>
+      <td id="38-disponibilidad">
+        <script>document.getElementById("38-disponibilidad").innerHTML =
+            books38.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO 39-->
+
+    <tr>
+      <td>39</td>
+      <td id="39-autor">
+        <script>document.getElementById("39-autor").innerHTML =
+            books39.Autor;
+        </script>
+      </td>
+      <td id="39-nombre">
+        <script>document.getElementById("39-nombre").innerHTML =
+            books39.Nombre;
+        </script>
+      </td>
+      <td id="39-editorial">
+        <script>document.getElementById("39-editorial").innerHTML =
+            books39.Editorial;
+        </script>
+      </td>
+      <td id="39-disponibilidad">
+        <script>document.getElementById("39-disponibilidad").innerHTML =
+            books39.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 40-->
+
+    <tr>
+      <td>40</td>
+      <td id="40-autor">
+        <script>document.getElementById("40-autor").innerHTML =
+            books40.Autor;
+        </script>
+      </td>
+      <td id="40-nombre">
+        <script>document.getElementById("40-nombre").innerHTML =
+            books40.Nombre;
+        </script>
+      </td>
+      <td id="40-editorial">
+        <script>document.getElementById("40-editorial").innerHTML =
+            books40.Editorial;
+        </script>
+      </td>
+      <td id="40-disponibilidad">
+        <script>document.getElementById("40-disponibilidad").innerHTML =
+            books40.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 41-->
+
+    <tr>
+      <td>41</td>
+      <td id="41-autor">
+        <script>document.getElementById("41-autor").innerHTML =
+            books41.Autor;
+        </script>
+      </td>
+      <td id="41-nombre">
+        <script>document.getElementById("41-nombre").innerHTML =
+            books41.Nombre;
+        </script>
+      </td>
+      <td id="41-editorial">
+        <script>document.getElementById("41-editorial").innerHTML =
+            books41.Editorial;
+        </script>
+      </td>
+      <td id="41-disponibilidad">
+        <script>document.getElementById("41-disponibilidad").innerHTML =
+            books41.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 42-->
+
+    <tr>
+      <td>42</td>
+      <td id="42-autor">
+        <script>document.getElementById("42-autor").innerHTML =
+            books42.Autor;
+        </script>
+      </td>
+      <td id="42-nombre">
+        <script>document.getElementById("42-nombre").innerHTML =
+            books42.Nombre;
+        </script>
+      </td>
+      <td id="42-editorial">
+        <script>document.getElementById("42-editorial").innerHTML =
+            books42.Editorial;
+        </script>
+      </td>
+      <td id="42-disponibilidad">
+        <script>document.getElementById("42-disponibilidad").innerHTML =
+            books42.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 43-->
+
+    <tr>
+      <td> 43</td>
+      <td id="43-autor">
+        <script>document.getElementById("43-autor").innerHTML =
+            books43.Autor;
+        </script>
+      </td>
+      <td id="43-nombre">
+        <script>document.getElementById("43-nombre").innerHTML =
+            books43.Nombre;
+        </script>
+      </td>
+      <td id="43-editorial">
+        <script>document.getElementById("43-editorial").innerHTML =
+            books43.Editorial;
+        </script>
+      </td>
+      <td id="43-disponibilidad">
+        <script>document.getElementById("43-disponibilidad").innerHTML =
+            books43.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 44-->
+
+    <tr>
+      <td>44</td>
+      <td id="44-autor">
+        <script>document.getElementById("44-autor").innerHTML =
+            books44.Autor;
+        </script>
+      </td>
+      <td id="44-nombre">
+        <script>document.getElementById("44-nombre").innerHTML =
+            books44.Nombre;
+        </script>
+      </td>
+      <td id="44-editorial">
+        <script>document.getElementById("44-editorial").innerHTML =
+            books44.Editorial;
+        </script>
+      </td>
+      <td id="44-disponibilidad">
+        <script>document.getElementById("44-disponibilidad").innerHTML =
+            books44.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 45-->
+
+    <tr>
+      <td>45</td>
+      <td id="45-autor">
+        <script>document.getElementById("45-autor").innerHTML =
+            books45.Autor;
+        </script>
+      </td>
+      <td id="45-nombre">
+        <script>document.getElementById("45-nombre").innerHTML =
+            books45.Nombre;
+        </script>
+      </td>
+      <td id="45-editorial">
+        <script>document.getElementById("45-editorial").innerHTML =
+            books45.Editorial;
+        </script>
+      </td>
+      <td id="45-disponibilidad">
+        <script>document.getElementById("45-disponibilidad").innerHTML =
+            books45.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 46-->
+
+    <tr>
+      <td>46</td>
+      <td id="46-autor">
+        <script>document.getElementById("46-autor").innerHTML =
+            books46.Autor;
+        </script>
+      </td>
+      <td id="46-nombre">
+        <script>document.getElementById("46-nombre").innerHTML =
+            books46.Nombre;
+        </script>
+      </td>
+      <td id="46-editorial">
+        <script>document.getElementById("46-editorial").innerHTML =
+            books46.Editorial;
+        </script>
+      </td>
+      <td id="46-disponibilidad">
+        <script>document.getElementById("46-disponibilidad").innerHTML =
+            books46.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO 47-->
+
+    <tr>
+      <td>47</td>
+      <td id="47-autor">
+        <script>document.getElementById("47-autor").innerHTML =
+            books47.Autor;
+        </script>
+      </td>
+      <td id="47-nombre">
+        <script>document.getElementById("47-nombre").innerHTML =
+            books47.Nombre;
+        </script>
+      </td>
+      <td id="47-editorial">
+        <script>document.getElementById("47-editorial").innerHTML =
+            books47.Editorial;
+        </script>
+      </td>
+      <td id="47-disponibilidad">
+        <script>document.getElementById("47-disponibilidad").innerHTML =
+            books47.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 48-->
+
+    <tr>
+      <td>48</td>
+      <td id="48-autor">
+        <script>document.getElementById("48-autor").innerHTML =
+            books48.Autor;
+        </script>
+      </td>
+      <td id="48-nombre">
+        <script>document.getElementById("48-nombre").innerHTML =
+            books48.Nombre;
+        </script>
+      </td>
+      <td id="48-editorial">
+        <script>document.getElementById("48-editorial").innerHTML =
+            books48.Editorial;
+        </script>
+      </td>
+      <td id="48-disponibilidad">
+        <script>document.getElementById("48-disponibilidad").innerHTML =
+            books48.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO 49-->
+
+    <tr>
+      <td>49</td>
+      <td id="49-autor">
+        <script>document.getElementById("49-autor").innerHTML =
+            books49.Autor;
+        </script>
+      </td>
+      <td id="49-nombre">
+        <script>document.getElementById("49-nombre").innerHTML =
+            books49.Nombre;
+        </script>
+      </td>
+      <td id="49-editorial">
+        <script>document.getElementById("49-editorial").innerHTML =
+            books49.Editorial;
+        </script>
+      </td>
+      <td id="49-disponibilidad">
+        <script>document.getElementById("49-disponibilidad").innerHTML =
+            books49.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 50-->
+
+    <tr>
+      <td>50</td>
+      <td id="50-autor">
+        <script>document.getElementById("50-autor").innerHTML =
+            books50.Autor;
+        </script>
+      </td>
+      <td id="50-nombre">
+        <script>document.getElementById("50-nombre").innerHTML =
+            books50.Nombre;
+        </script>
+      </td>
+      <td id="50-editorial">
+        <script>document.getElementById("50-editorial").innerHTML =
+            books50.Editorial;
+        </script>
+      </td>
+      <td id="50-disponibilidad">
+        <script>document.getElementById("50-disponibilidad").innerHTML =
+            books50.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO 51-->
+
+    <tr>
+      <td>51</td>
+      <td id="51-autor">
+        <script>document.getElementById("51-autor").innerHTML =
+            books51.Autor;
+        </script>
+      </td>
+      <td id="51-nombre">
+        <script>document.getElementById("51-nombre").innerHTML =
+            books51.Nombre;
+        </script>
+      </td>
+      <td id="51-editorial">
+        <script>document.getElementById("51-editorial").innerHTML =
+            books51.Editorial;
+        </script>
+      </td>
+      <td id="51-disponibilidad">
+        <script>document.getElementById("51-disponibilidad").innerHTML =
+            books51.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 52-->
+
+    <tr>
+      <td>52</td>
+      <td id="52-autor">
+        <script>document.getElementById("52-autor").innerHTML =
+            books52.Autor;
+        </script>
+      </td>
+      <td id="52-nombre">
+        <script>document.getElementById("52-nombre").innerHTML =
+            books52.Nombre;
+        </script>
+      </td>
+      <td id="52-editorial">
+        <script>document.getElementById("52-editorial").innerHTML =
+            books52.Editorial;
+        </script>
+      </td>
+      <td id="52-disponibilidad">
+        <script>document.getElementById("52-disponibilidad").innerHTML =
+            books52.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 53-->
+
+    <tr>
+      <td>53</td>
+      <td id="53-autor">
+        <script>document.getElementById("53-autor").innerHTML =
+            books53.Autor;
+        </script>
+      </td>
+      <td id="53-nombre">
+        <script>document.getElementById("53-nombre").innerHTML =
+            books53.Nombre;
+        </script>
+      </td>
+      <td id="53-editorial">
+        <script>document.getElementById("53-editorial").innerHTML =
+            books53.Editorial;
+        </script>
+      </td>
+      <td id="53-disponibilidad">
+        <script>document.getElementById("53-disponibilidad").innerHTML =
+            books10.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 54-->
+
+    <tr>
+      <td>54</td>
+      <td id="54-autor">
+        <script>document.getElementById("54-autor").innerHTML =
+            books54.Autor;
+        </script>
+      </td>
+      <td id="54-nombre">
+        <script>document.getElementById("54-nombre").innerHTML =
+            books54.Nombre;
+        </script>
+      </td>
+      <td id="54-editorial">
+        <script>document.getElementById("54-editorial").innerHTML =
+            books54.Editorial;
+        </script>
+      </td>
+      <td id="54-disponibilidad">
+        <script>document.getElementById("54-disponibilidad").innerHTML =
+            books54.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 55-->
+
+    <tr>
+      <td>55</td>
+      <td id="55-autor">
+        <script>document.getElementById("55-autor").innerHTML =
+            books55.Autor;
+        </script>
+      </td>
+      <td id="55-nombre">
+        <script>document.getElementById("55-nombre").innerHTML =
+            books55.Nombre;
+        </script>
+      </td>
+      <td id="55-editorial">
+        <script>document.getElementById("55-editorial").innerHTML =
+            books55.Editorial;
+        </script>
+      </td>
+      <td id="55-disponibilidad">
+        <script>document.getElementById("55-disponibilidad").innerHTML =
+            books55.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 56-->
+
+    <tr>
+      <td>56</td>
+      <td id="56-autor">
+        <script>document.getElementById("56-autor").innerHTML =
+            books56.Autor;
+        </script>
+      </td>
+      <td id="56-nombre">
+        <script>document.getElementById("56-nombre").innerHTML =
+            books56.Nombre;
+        </script>
+      </td>
+      <td id="56-editorial">
+        <script>document.getElementById("56-editorial").innerHTML =
+            books56.Editorial;
+        </script>
+      </td>
+      <td id="56-disponibilidad">
+        <script>document.getElementById("56-disponibilidad").innerHTML =
+            books56.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 57-->
+
+    <tr>
+      <td>57</td>
+      <td id="57-autor">
+        <script>document.getElementById("57-autor").innerHTML =
+            books57.Autor;
+        </script>
+      </td>
+      <td id="57-nombre">
+        <script>document.getElementById("57-nombre").innerHTML =
+            books57.Nombre;
+        </script>
+      </td>
+      <td id="57-editorial">
+        <script>document.getElementById("57-editorial").innerHTML =
+            books57.Editorial;
+        </script>
+      </td>
+      <td id="57-disponibilidad">
+        <script>document.getElementById("57-disponibilidad").innerHTML =
+            books57.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 58-->
+
+    <tr>
+      <td>58</td>
+      <td id="58-autor">
+        <script>document.getElementById("58-autor").innerHTML =
+            books58.Autor;
+        </script>
+      </td>
+      <td id="58-nombre">
+        <script>document.getElementById("58-nombre").innerHTML =
+            books58.Nombre;
+        </script>
+      </td>
+      <td id="58-editorial">
+        <script>document.getElementById("58-editorial").innerHTML =
+            books58.Editorial;
+        </script>
+      </td>
+      <td id="58-disponibilidad">
+        <script>document.getElementById("58-disponibilidad").innerHTML =
+            books58.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO 59-->
+
+    <tr>
+      <td>59</td>
+      <td id="59-autor">
+        <script>document.getElementById("59-autor").innerHTML =
+            books59.Autor;
+        </script>
+      </td>
+      <td id="59-nombre">
+        <script>document.getElementById("59-nombre").innerHTML =
+            books59.Nombre;
+        </script>
+      </td>
+      <td id="59-editorial">
+        <script>document.getElementById("59-editorial").innerHTML =
+            books59.Editorial;
+        </script>
+      </td>
+      <td id="59-disponibilidad">
+        <script>document.getElementById("59-disponibilidad").innerHTML =
+            books59.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 60-->
+
+    <tr>
+      <td>60</td>
+      <td id="60-autor">
+        <script>document.getElementById("60-autor").innerHTML =
+            books60.Autor;
+        </script>
+      </td>
+      <td id="60-nombre">
+        <script>document.getElementById("60-nombre").innerHTML =
+            books60.Nombre;
+        </script>
+      </td>
+      <td id="60-editorial">
+        <script>document.getElementById("60-editorial").innerHTML =
+            books60.Editorial;
+        </script>
+      </td>
+      <td id="60-disponibilidad">
+        <script>document.getElementById("60-disponibilidad").innerHTML =
+            books60.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 61-->
+
+    <tr>
+      <td>61</td>
+      <td id="61-autor">
+        <script>document.getElementById("61-autor").innerHTML =
+            books61.Autor;
+        </script>
+      </td>
+      <td id="61-nombre">
+        <script>document.getElementById("61-nombre").innerHTML =
+            books61.Nombre;
+        </script>
+      </td>
+      <td id="61-editorial">
+        <script>document.getElementById("61-editorial").innerHTML =
+            books61.Editorial;
+        </script>
+      </td>
+      <td id="61-disponibilidad">
+        <script>document.getElementById("61-disponibilidad").innerHTML =
+            books61.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 62-->
+
+    <tr>
+      <td>62</td>
+      <td id="62-autor">
+        <script>document.getElementById("62-autor").innerHTML =
+            books62.Autor;
+        </script>
+      </td>
+      <td id="62-nombre">
+        <script>document.getElementById("62-nombre").innerHTML =
+            books62.Nombre;
+        </script>
+      </td>
+      <td id="62-editorial">
+        <script>document.getElementById("62-editorial").innerHTML =
+            books62.Editorial;
+        </script>
+      </td>
+      <td id="62-disponibilidad">
+        <script>document.getElementById("62-disponibilidad").innerHTML =
+            books62.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO 63-->
+
+    <tr>
+      <td>63</td>
+      <td id="63-autor">
+        <script>document.getElementById("63-autor").innerHTML =
+            books63.Autor;
+        </script>
+      </td>
+      <td id="63-nombre">
+        <script>document.getElementById("63-nombre").innerHTML =
+            books63.Nombre;
+        </script>
+      </td>
+      <td id="63-editorial">
+        <script>document.getElementById("63-editorial").innerHTML =
+            books63.Editorial;
+        </script>
+      </td>
+      <td id="63-disponibilidad">
+        <script>document.getElementById("63-disponibilidad").innerHTML =
+            books63.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 64-->
+
+    <tr>
+      <td>64</td>
+      <td id="64-autor">
+        <script>document.getElementById("64-autor").innerHTML =
+            books64.Autor;
+        </script>
+      </td>
+      <td id="64-nombre">
+        <script>document.getElementById("64-nombre").innerHTML =
+            books64.Nombre;
+        </script>
+      </td>
+      <td id="64-editorial">
+        <script>document.getElementById("64-editorial").innerHTML =
+            books64.Editorial;
+        </script>
+      </td>
+      <td id="64-disponibilidad">
+        <script>document.getElementById("64-disponibilidad").innerHTML =
+            books64.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 65-->
+
+    <tr>
+      <td>65</td>
+      <td id="65-autor">
+        <script>document.getElementById("65-autor").innerHTML =
+            books65.Autor;
+        </script>
+      </td>
+      <td id="65-nombre">
+        <script>document.getElementById("65-nombre").innerHTML =
+            books65.Nombre;
+        </script>
+      </td>
+      <td id="65-editorial">
+        <script>document.getElementById("65-editorial").innerHTML =
+            books65.Editorial;
+        </script>
+      </td>
+      <td id="65-disponibilidad">
+        <script>document.getElementById("65-disponibilidad").innerHTML =
+            books65.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 66-->
+
+    <tr>
+      <td>66</td>
+      <td id="66-autor">
+        <script>document.getElementById("66-autor").innerHTML =
+            books66.Autor;
+        </script>
+      </td>
+      <td id="66-nombre">
+        <script>document.getElementById("66-nombre").innerHTML =
+            books66.Nombre;
+        </script>
+      </td>
+      <td id="66-editorial">
+        <script>document.getElementById("66-editorial").innerHTML =
+            books66.Editorial;
+        </script>
+      </td>
+      <td id="66-disponibilidad">
+        <script>document.getElementById("66-disponibilidad").innerHTML =
+            books66.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 67-->
+
+    <tr>
+      <td>67</td>
+      <td id="67-autor">
+        <script>document.getElementById("67-autor").innerHTML =
+            books67.Autor;
+        </script>
+      </td>
+      <td id="67-nombre">
+        <script>document.getElementById("67-nombre").innerHTML =
+            books67.Nombre;
+        </script>
+      </td>
+      <td id="67-editorial">
+        <script>document.getElementById("67-editorial").innerHTML =
+            books67.Editorial;
+        </script>
+      </td>
+      <td id="67-disponibilidad">
+        <script>document.getElementById("67-disponibilidad").innerHTML =
+            books67.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 68-->
+
+    <tr>
+      <td>68</td>
+      <td id="68-autor">
+        <script>document.getElementById("68-autor").innerHTML =
+            books68.Autor;
+        </script>
+      </td>
+      <td id="68-nombre">
+        <script>document.getElementById("68-nombre").innerHTML =
+            books68.Nombre;
+        </script>
+      </td>
+      <td id="68-editorial">
+        <script>document.getElementById("68-editorial").innerHTML =
+            books68.Editorial;
+        </script>
+      </td>
+      <td id="68-disponibilidad">
+        <script>document.getElementById("68-disponibilidad").innerHTML =
+            books68.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO 69-->
+
+    <tr>
+      <td>69</td>
+      <td id="69-autor">
+        <script>document.getElementById("69-autor").innerHTML =
+            books69.Autor;
+        </script>
+      </td>
+      <td id="69-nombre">
+        <script>document.getElementById("69-nombre").innerHTML =
+            books69.Nombre;
+        </script>
+      </td>
+      <td id="69-editorial">
+        <script>document.getElementById("69-editorial").innerHTML =
+            books69.Editorial;
+        </script>
+      </td>
+      <td id="69-disponibilidad">
+        <script>document.getElementById("69-disponibilidad").innerHTML =
+            books69.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO 70-->
+
+    <tr>
+      <td>70</td>
+      <td id="70-autor">
+        <script>document.getElementById("70-autor").innerHTML =
+            books70.Autor;
+        </script>
+      </td>
+      <td id="70-nombre">
+        <script>document.getElementById("70-nombre").innerHTML =
+            books70.Nombre;
+        </script>
+      </td>
+      <td id="70-editorial">
+        <script>document.getElementById("70-editorial").innerHTML =
+            books70.Editorial;
+        </script>
+      </td>
+      <td id="70-disponibilidad">
+        <script>document.getElementById("70-disponibilidad").innerHTML =
+            books70.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO 71-->
+
+    <tr>
+      <td>71</td>
+      <td id="71-autor">
+        <script>document.getElementById("71-autor").innerHTML =
+            books71.Autor;
+        </script>
+      </td>
+      <td id="71-nombre">
+        <script>document.getElementById("71-nombre").innerHTML =
+            books71.Nombre;
+        </script>
+      </td>
+      <td id="71-editorial">
+        <script>document.getElementById("71-editorial").innerHTML =
+            books71.Editorial;
+        </script>
+      </td>
+      <td id="71-disponibilidad">
+        <script>document.getElementById("71-disponibilidad").innerHTML =
+            books71.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 72-->
+
+    <tr>
+      <td>72</td>
+      <td id="72-autor">
+        <script>document.getElementById("72-autor").innerHTML =
+            books72.Autor;
+        </script>
+      </td>
+      <td id="72-nombre">
+        <script>document.getElementById("72-nombre").innerHTML =
+            books72.Nombre;
+        </script>
+      </td>
+      <td id="72-editorial">
+        <script>document.getElementById("72-editorial").innerHTML =
+            books72.Editorial;
+        </script>
+      </td>
+      <td id="72-disponibilidad">
+        <script>document.getElementById("72-disponibilidad").innerHTML =
+            books72.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 73-->
+
+    <tr>
+      <td>73</td>
+      <td id="73-autor">
+        <script>document.getElementById("73-autor").innerHTML =
+            books73.Autor;
+        </script>
+      </td>
+      <td id="73-nombre">
+        <script>document.getElementById("73-nombre").innerHTML =
+            books73.Nombre;
+        </script>
+      </td>
+      <td id="73-editorial">
+        <script>document.getElementById("73-editorial").innerHTML =
+            books73.Editorial;
+        </script>
+      </td>
+      <td id="73-disponibilidad">
+        <script>document.getElementById("73-disponibilidad").innerHTML =
+            books73.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 74-->
+
+    <tr>
+      <td>74</td>
+      <td id="74-autor">
+        <script>document.getElementById("74-autor").innerHTML =
+            books74.Autor;
+        </script>
+      </td>
+      <td id="74-nombre">
+        <script>document.getElementById("74-nombre").innerHTML =
+            books74.Nombre;
+        </script>
+      </td>
+      <td id="74-editorial">
+        <script>document.getElementById("74-editorial").innerHTML =
+            books74.Editorial;
+        </script>
+      </td>
+      <td id="74-disponibilidad">
+        <script>document.getElementById("74-disponibilidad").innerHTML =
+            books74.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO 75-->
+
+    <tr>
+      <td>75</td>
+      <td id="75-autor">
+        <script>document.getElementById("75-autor").innerHTML =
+            books75.Autor;
+        </script>
+      </td>
+      <td id="75-nombre">
+        <script>document.getElementById("75-nombre").innerHTML =
+            books75.Nombre;
+        </script>
+      </td>
+      <td id="75-editorial">
+        <script>document.getElementById("75-editorial").innerHTML =
+            books75.Editorial;
+        </script>
+      </td>
+      <td id="75-disponibilidad">
+        <script>document.getElementById("75-disponibilidad").innerHTML =
+            books75.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO 76-->
+
+    <tr>
+      <td>76</td>
+      <td id="76-autor">
+        <script>document.getElementById("76-autor").innerHTML =
+            books76.Autor;
+        </script>
+      </td>
+      <td id="76-nombre">
+        <script>document.getElementById("76-nombre").innerHTML =
+            books76.Nombre;
+        </script>
+      </td>
+      <td id="76-editorial">
+        <script>document.getElementById("76-editorial").innerHTML =
+            books76.Editorial;
+        </script>
+      </td>
+      <td id="76-disponibilidad">
+        <script>document.getElementById("76-disponibilidad").innerHTML =
+            books76.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 77-->
+
+    <tr>
+      <td>77</td>
+      <td id="77-autor">
+        <script>document.getElementById("77-autor").innerHTML =
+            books77.Autor;
+        </script>
+      </td>
+      <td id="77-nombre">
+        <script>document.getElementById("77-nombre").innerHTML =
+            books77.Nombre;
+        </script>
+      </td>
+      <td id="77-editorial">
+        <script>document.getElementById("77-editorial").innerHTML =
+            books77.Editorial;
+        </script>
+      </td>
+      <td id="77-disponibilidad">
+        <script>document.getElementById("77-disponibilidad").innerHTML =
+            books77.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 78-->
+
+    <tr>
+      <td>78</td>
+      <td id="78-autor">
+        <script>document.getElementById("78-autor").innerHTML =
+            books78.Autor;
+        </script>
+      </td>
+      <td id="78-nombre">
+        <script>document.getElementById("78-nombre").innerHTML =
+            books78.Nombre;
+        </script>
+      </td>
+      <td id="78-editorial">
+        <script>document.getElementById("78-editorial").innerHTML =
+            books78.Editorial;
+        </script>
+      </td>
+      <td id="78-disponibilidad">
+        <script>document.getElementById("78-disponibilidad").innerHTML =
+            books78.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO 79 -->
+
+    <tr>
+      <td>79</td>
+      <td id="79-autor">
+        <script>document.getElementById("79-autor").innerHTML =
+            books79.Autor;
+        </script>
+      </td>
+      <td id="79-nombre">
+        <script>document.getElementById("79-nombre").innerHTML =
+            books79.Nombre;
+        </script>
+      </td>
+      <td id="79-editorial">
+        <script>document.getElementById("79-editorial").innerHTML =
+            books79.Editorial;
+        </script>
+      </td>
+      <td id="79-disponibilidad">
+        <script>document.getElementById("79-disponibilidad").innerHTML =
+            books79.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 80 -->
+
+    <tr>
+      <td>80</td>
+      <td id="80-autor">
+        <script>document.getElementById("80-autor").innerHTML =
+            books80.Autor;
+        </script>
+      </td>
+      <td id="80-nombre">
+        <script>document.getElementById("80-nombre").innerHTML =
+            books10.Nombre;
+        </script>
+      </td>
+      <td id="80-editorial">
+        <script>document.getElementById("80-editorial").innerHTML =
+            books80.Editorial;
+        </script>
+      </td>
+      <td id="80-disponibilidad">
+        <script>document.getElementById("80-disponibilidad").innerHTML =
+            books80.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 81-->
+
+    <tr>
+      <td>81</td>
+      <td id="81-autor">
+        <script>document.getElementById("81-autor").innerHTML =
+            books81.Autor;
+        </script>
+      </td>
+      <td id="81-nombre">
+        <script>document.getElementById("81-nombre").innerHTML =
+            books81.Nombre;
+        </script>
+      </td>
+      <td id="81-editorial">
+        <script>document.getElementById("81-editorial").innerHTML =
+            books81.Editorial;
+        </script>
+      </td>
+      <td id="81-disponibilidad">
+        <script>document.getElementById("81-disponibilidad").innerHTML =
+            books81.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 82-->
+
+    <tr>
+      <td>82</td>
+      <td id="82-autor">
+        <script>document.getElementById("82-autor").innerHTML =
+            books82.Autor;
+        </script>
+      </td>
+      <td id="82-nombre">
+        <script>document.getElementById("82-nombre").innerHTML =
+            books82.Nombre;
+        </script>
+      </td>
+      <td id="82-editorial">
+        <script>document.getElementById("82-editorial").innerHTML =
+            books82.Editorial;
+        </script>
+      </td>
+      <td id="82-disponibilidad">
+        <script>document.getElementById("82-disponibilidad").innerHTML =
+            books82.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 83-->
+
+    <tr>
+      <td>83</td>
+      <td id="83-autor">
+        <script>document.getElementById("83-autor").innerHTML =
+            books83.Autor;
+        </script>
+      </td>
+      <td id="83-nombre">
+        <script>document.getElementById("83-nombre").innerHTML =
+            books83.Nombre;
+        </script>
+      </td>
+      <td id="83-editorial">
+        <script>document.getElementById("83-editorial").innerHTML =
+            books83.Editorial;
+        </script>
+      </td>
+      <td id="83-disponibilidad">
+        <script>document.getElementById("83-disponibilidad").innerHTML =
+            books83.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 84-->
+
+    <tr>
+      <td>84</td>
+      <td id="84-autor">
+        <script>document.getElementById("84-autor").innerHTML =
+            books84.Autor;
+        </script>
+      </td>
+      <td id="84-nombre">
+        <script>document.getElementById("84-nombre").innerHTML =
+            books84.Nombre;
+        </script>
+      </td>
+      <td id="84-editorial">
+        <script>document.getElementById("84-editorial").innerHTML =
+            books84.Editorial;
+        </script>
+      </td>
+      <td id="84-disponibilidad">
+        <script>document.getElementById("84-disponibilidad").innerHTML =
+            books84.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 85 -->
+
+    <tr>
+      <td>85</td>
+      <td id="85-autor">
+        <script>document.getElementById("85-autor").innerHTML =
+            books85.Autor;
+        </script>
+      </td>
+      <td id="85-nombre">
+        <script>document.getElementById("85-nombre").innerHTML =
+            books85.Nombre;
+        </script>
+      </td>
+      <td id="85-editorial">
+        <script>document.getElementById("85-editorial").innerHTML =
+            books85.Editorial;
+        </script>
+      </td>
+      <td id="85-disponibilidad">
+        <script>document.getElementById("85-disponibilidad").innerHTML =
+            books85.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO  86-->
+
+    <tr>
+      <td>86</td>
+      <td id="86-autor">
+        <script>document.getElementById("86-autor").innerHTML =
+            books10.Autor;
+        </script>
+      </td>
+      <td id="86-nombre">
+        <script>document.getElementById("86-nombre").innerHTML =
+            books86.Nombre;
+        </script>
+      </td>
+      <td id="86-editorial">
+        <script>document.getElementById("86-editorial").innerHTML =
+            books86.Editorial;
+        </script>
+      </td>
+      <td id="86-disponibilidad">
+        <script>document.getElementById("86-disponibilidad").innerHTML =
+            books86.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 87-->
+
+    <tr>
+      <td>87</td>
+      <td id="87-autor">
+        <script>document.getElementById("87-autor").innerHTML =
+            books87.Autor;
+        </script>
+      </td>
+      <td id="87-nombre">
+        <script>document.getElementById("87-nombre").innerHTML =
+            books87.Nombre;
+        </script>
+      </td>
+      <td id="87-editorial">
+        <script>document.getElementById("87-editorial").innerHTML =
+            books87.Editorial;
+        </script>
+      </td>
+      <td id="87-disponibilidad">
+        <script>document.getElementById("87-disponibilidad").innerHTML =
+            books87.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO 88-->
+
+    <tr>
+      <td>88</td>
+      <td id="88-autor">
+        <script>document.getElementById("88-autor").innerHTML =
+            books88.Autor;
+        </script>
+      </td>
+      <td id="88-nombre">
+        <script>document.getElementById("88-nombre").innerHTML =
+            books88.Nombre;
+        </script>
+      </td>
+      <td id="88-editorial">
+        <script>document.getElementById("88-editorial").innerHTML =
+            books88.Editorial;
+        </script>
+      </td>
+      <td id="88-disponibilidad">
+        <script>document.getElementById("88-disponibilidad").innerHTML =
+            books88.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 89-->
+
+    <tr>
+      <td>89</td>
+      <td id="89-autor">
+        <script>document.getElementById("89-autor").innerHTML =
+            books89.Autor;
+        </script>
+      </td>
+      <td id="89-nombre">
+        <script>document.getElementById("89-nombre").innerHTML =
+            books89.Nombre;
+        </script>
+      </td>
+      <td id="89-editorial">
+        <script>document.getElementById("89-editorial").innerHTML =
+            books89.Editorial;
+        </script>
+      </td>
+      <td id="89-disponibilidad">
+        <script>document.getElementById("89-disponibilidad").innerHTML =
+            books89.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 90 -->
+
+    <tr>
+      <td>90</td>
+      <td id="90-autor">
+        <script>document.getElementById("90-autor").innerHTML =
+            books90.Autor;
+        </script>
+      </td>
+      <td id="90-nombre">
+        <script>document.getElementById("90-nombre").innerHTML =
+            books90.Nombre;
+        </script>
+      </td>
+      <td id="90-editorial">
+        <script>document.getElementById("90-editorial").innerHTML =
+            books90.Editorial;
+        </script>
+      </td>
+      <td id="90-disponibilidad">
+        <script>document.getElementById("90-disponibilidad").innerHTML =
+            books90.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO  91-->
+
+    <tr>
+      <td>91</td>
+      <td id="91-autor">
+        <script>document.getElementById("91-autor").innerHTML =
+            books91.Autor;
+        </script>
+      </td>
+      <td id="91-nombre">
+        <script>document.getElementById("91-nombre").innerHTML =
+            books91.Nombre;
+        </script>
+      </td>
+      <td id="91-editorial">
+        <script>document.getElementById("91-editorial").innerHTML =
+            books91.Editorial;
+        </script>
+      </td>
+      <td id="91-disponibilidad">
+        <script>document.getElementById("91-disponibilidad").innerHTML =
+            books91.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO 92-->
+
+    <tr>
+      <td>92</td>
+      <td id="92-autor">
+        <script>document.getElementById("92-autor").innerHTML =
+            books92.Autor;
+        </script>
+      </td>
+      <td id="92-nombre">
+        <script>document.getElementById("92-nombre").innerHTML =
+            books92.Nombre;
+        </script>
+      </td>
+      <td id="92-editorial">
+        <script>document.getElementById("92-editorial").innerHTML =
+            books92.Editorial;
+        </script>
+      </td>
+      <td id="92-disponibilidad">
+        <script>document.getElementById("92-disponibilidad").innerHTML =
+            books92.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 93-->
+
+    <tr>
+      <td>93</td>
+      <td id="93-autor">
+        <script>document.getElementById("93-autor").innerHTML =
+            books93.Autor;
+        </script>
+      </td>
+      <td id="93-nombre">
+        <script>document.getElementById("93-nombre").innerHTML =
+            books93.Nombre;
+        </script>
+      </td>
+      <td id="93-editorial">
+        <script>document.getElementById("93-editorial").innerHTML =
+            books93.Editorial;
+        </script>
+      </td>
+      <td id="93-disponibilidad">
+        <script>document.getElementById("93-disponibilidad").innerHTML =
+            books93.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 94-->
+
+    <tr>
+      <td>94</td>
+      <td id="94-autor">
+        <script>document.getElementById("94-autor").innerHTML =
+            books94.Autor;
+        </script>
+      </td>
+      <td id="94-nombre">
+        <script>document.getElementById("94-nombre").innerHTML =
+            books94.Nombre;
+        </script>
+      </td>
+      <td id="94-editorial">
+        <script>document.getElementById("94-editorial").innerHTML =
+            books94.Editorial;
+        </script>
+      </td>
+      <td id="94-disponibilidad">
+        <script>document.getElementById("94-disponibilidad").innerHTML =
+            books94.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 95-->
+
+    <tr>
+      <td>95</td>
+      <td id="95-autor">
+        <script>document.getElementById("95-autor").innerHTML =
+            books95.Autor;
+        </script>
+      </td>
+      <td id="95-nombre">
+        <script>document.getElementById("95-nombre").innerHTML =
+            books95.Nombre;
+        </script>
+      </td>
+      <td id="95-editorial">
+        <script>document.getElementById("95-editorial").innerHTML =
+            books95.Editorial;
+        </script>
+      </td>
+      <td id="95-disponibilidad">
+        <script>document.getElementById("95-disponibilidad").innerHTML =
+            books95.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 96-->
+
+    <tr>
+      <td>96</td>
+      <td id="96-autor">
+        <script>document.getElementById("96-autor").innerHTML =
+            books96.Autor;
+        </script>
+      </td>
+      <td id="96-nombre">
+        <script>document.getElementById("96-nombre").innerHTML =
+            books96.Nombre;
+        </script>
+      </td>
+      <td id="96-editorial">
+        <script>document.getElementById("96-editorial").innerHTML =
+            books96.Editorial;
+        </script>
+      </td>
+      <td id="96-disponibilidad">
+        <script>document.getElementById("96-disponibilidad").innerHTML =
+            books96.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 97 -->
+
+    <tr>
+      <td>97</td>
+      <td id="97-autor">
+        <script>document.getElementById("97-autor").innerHTML =
+            books97.Autor;
+        </script>
+      </td>
+      <td id="97-nombre">
+        <script>document.getElementById("97-nombre").innerHTML =
+            books97.Nombre;
+        </script>
+      </td>
+      <td id="97-editorial">
+        <script>document.getElementById("97-editorial").innerHTML =
+            books97.Editorial;
+        </script>
+      </td>
+      <td id="97-disponibilidad">
+        <script>document.getElementById("97-disponibilidad").innerHTML =
+            books97.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 98 -->
+
+    <tr>
+      <td>98</td>
+      <td id="98-autor">
+        <script>document.getElementById("98-autor").innerHTML =
+            books98.Autor;
+        </script>
+      </td>
+      <td id="98-nombre">
+        <script>document.getElementById("98-nombre").innerHTML =
+            books98.Nombre;
+        </script>
+      </td>
+      <td id="98-editorial">
+        <script>document.getElementById("98-editorial").innerHTML =
+            books99.Editorial;
+        </script>
+      </td>
+      <td id="98-disponibilidad">
+        <script>document.getElementById("98-disponibilidad").innerHTML =
+            books99.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO 99 -->
+
+    <tr>
+      <td>99</td>
+      <td id="99-autor">
+        <script>document.getElementById("99-autor").innerHTML =
+            books99.Autor;
+        </script>
+      </td>
+      <td id="99-nombre">
+        <script>document.getElementById("99-nombre").innerHTML =
+            books99.Nombre;
+        </script>
+      </td>
+      <td id="99-editorial">
+        <script>document.getElementById("99-editorial").innerHTML =
+            books99.Editorial;
+        </script>
+      </td>
+      <td id="99-disponibilidad">
+        <script>document.getElementById("99-disponibilidad").innerHTML =
+            books99.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 100-->
+
+    <tr>
+      <td>100</td>
+      <td id="100-autor">
+        <script>document.getElementById("100-autor").innerHTML =
+            books100.Autor;
+        </script>
+      </td>
+      <td id="100-nombre">
+        <script>document.getElementById("100-nombre").innerHTML =
+            books100.Nombre;
+        </script>
+      </td>
+      <td id="100-editorial">
+        <script>document.getElementById("100-editorial").innerHTML =
+            books100.Editorial;
+        </script>
+      </td>
+      <td id="100-disponibilidad">
+        <script>document.getElementById("100-disponibilidad").innerHTML =
+            books100.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 101-->
+
+    <tr>
+      <td>101</td>
+      <td id="101-autor">
+        <script>document.getElementById("101-autor").innerHTML =
+            books101.Autor;
+        </script>
+      </td>
+      <td id="101-nombre">
+        <script>document.getElementById("101-nombre").innerHTML =
+            books101.Nombre;
+        </script>
+      </td>
+      <td id="101-editorial">
+        <script>document.getElementById("101-editorial").innerHTML =
+            books101.Editorial;
+        </script>
+      </td>
+      <td id="101-disponibilidad">
+        <script>document.getElementById("101-disponibilidad").innerHTML =
+            books101.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+    <!-- OBJETO NÚMERO 102-->
+
+    <tr>
+      <td>102</td>
+      <td id="102-autor">
+        <script>document.getElementById("102-autor").innerHTML =
+            books102.Autor;
+        </script>
+      </td>
+      <td id="102-nombre">
+        <script>document.getElementById("102-nombre").innerHTML =
+            books102.Nombre;
+        </script>
+      </td>
+      <td id="102-editorial">
+        <script>document.getElementById("102-editorial").innerHTML =
+            books102.Editorial;
+        </script>
+      </td>
+      <td id="102-disponibilidad">
+        <script>document.getElementById("102-disponibilidad").innerHTML =
+            books102.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 103-->
+
+    <tr>
+      <td>103</td>
+      <td id="103-autor">
+        <script>document.getElementById("103-autor").innerHTML =
+            books103.Autor;
+        </script>
+      </td>
+      <td id="103-nombre">
+        <script>document.getElementById("103-nombre").innerHTML =
+            books103.Nombre;
+        </script>
+      </td>
+      <td id="103-editorial">
+        <script>document.getElementById("103-editorial").innerHTML =
+            books103.Editorial;
+        </script>
+      </td>
+      <td id="103-disponibilidad">
+        <script>document.getElementById("103-disponibilidad").innerHTML =
+            books103.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 104-->
+
+    <tr>
+      <td>104</td>
+      <td id="104-autor">
+        <script>document.getElementById("104-autor").innerHTML =
+            books104.Autor;
+        </script>
+      </td>
+      <td id="104-nombre">
+        <script>document.getElementById("104-nombre").innerHTML =
+            books104.Nombre;
+        </script>
+      </td>
+      <td id="104-editorial">
+        <script>document.getElementById("104-editorial").innerHTML =
+            books104.Editorial;
+        </script>
+      </td>
+      <td id="104-disponibilidad">
+        <script>document.getElementById("104-disponibilidad").innerHTML =
+            books104.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 105-->
+
+    <tr>
+      <td>105</td>
+      <td id="105-autor">
+        <script>document.getElementById("105-autor").innerHTML =
+            books105.Autor;
+        </script>
+      </td>
+      <td id="105-nombre">
+        <script>document.getElementById("105-nombre").innerHTML =
+            books105.Nombre;
+        </script>
+      </td>
+      <td id="105-editorial">
+        <script>document.getElementById("105-editorial").innerHTML =
+            books105.Editorial;
+        </script>
+      </td>
+      <td id="105-disponibilidad">
+        <script>document.getElementById("105-disponibilidad").innerHTML =
+            books105.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 106-->
+
+    <tr>
+      <td>106</td>
+      <td id="106-autor">
+        <script>document.getElementById("106-autor").innerHTML =
+            books106.Autor;
+        </script>
+      </td>
+      <td id="106-nombre">
+        <script>document.getElementById("106-nombre").innerHTML =
+            books106.Nombre;
+        </script>
+      </td>
+      <td id="106-editorial">
+        <script>document.getElementById("106-editorial").innerHTML =
+            books106.Editorial;
+        </script>
+      </td>
+      <td id="106-disponibilidad">
+        <script>document.getElementById("106-disponibilidad").innerHTML =
+            books106.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 107-->
+
+    <tr>
+      <td>107</td>
+      <td id="107-autor">
+        <script>document.getElementById("107-autor").innerHTML =
+            books107.Autor;
+        </script>
+      </td>
+      <td id="107-nombre">
+        <script>document.getElementById("107-nombre").innerHTML =
+            books107.Nombre;
+        </script>
+      </td>
+      <td id="107-editorial">
+        <script>document.getElementById("107-editorial").innerHTML =
+            books107.Editorial;
+        </script>
+      </td>
+      <td id="107-disponibilidad">
+        <script>document.getElementById("107-disponibilidad").innerHTML =
+            books107.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 108-->
+
+    <tr>
+      <td>108</td>
+      <td id="108-autor">
+        <script>document.getElementById("108-autor").innerHTML =
+            books108.Autor;
+        </script>
+      </td>
+      <td id="108-nombre">
+        <script>document.getElementById("108-nombre").innerHTML =
+            books108.Nombre;
+        </script>
+      </td>
+      <td id="108-editorial">
+        <script>document.getElementById("108-editorial").innerHTML =
+            books108.Editorial;
+        </script>
+      </td>
+      <td id="108-disponibilidad">
+        <script>document.getElementById("108-disponibilidad").innerHTML =
+            books108.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 109-->
+
+    <tr>
+      <td>109</td>
+      <td id="109-autor">
+        <script>document.getElementById("109-autor").innerHTML =
+            books109.Autor;
+        </script>
+      </td>
+      <td id="109-nombre">
+        <script>document.getElementById("109-nombre").innerHTML =
+            books109.Nombre;
+        </script>
+      </td>
+      <td id="109-editorial">
+        <script>document.getElementById("109-editorial").innerHTML =
+            books109.Editorial;
+        </script>
+      </td>
+      <td id="109-disponibilidad">
+        <script>document.getElementById("109-disponibilidad").innerHTML =
+            books109.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 110-->
+
+    <tr>
+      <td>110</td>
+      <td id="110-autor">
+        <script>document.getElementById("110-autor").innerHTML =
+            books110.Autor;
+        </script>
+      </td>
+      <td id="110-nombre">
+        <script>document.getElementById("110-nombre").innerHTML =
+            books110.Nombre;
+        </script>
+      </td>
+      <td id="110-editorial">
+        <script>document.getElementById("110-editorial").innerHTML =
+            books110.Editorial;
+        </script>
+      </td>
+      <td id="110-disponibilidad">
+        <script>document.getElementById("110-disponibilidad").innerHTML =
+            books110.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 111-->
+
+    <tr>
+      <td>111</td>
+      <td id="111-autor">
+        <script>document.getElementById("111-autor").innerHTML =
+            books111.Autor;
+        </script>
+      </td>
+      <td id="111-nombre">
+        <script>document.getElementById("111-nombre").innerHTML =
+            books111.Nombre;
+        </script>
+      </td>
+      <td id="111-editorial">
+        <script>document.getElementById("111-editorial").innerHTML =
+            books111.Editorial;
+        </script>
+      </td>
+      <td id="111-disponibilidad">
+        <script>document.getElementById("111-disponibilidad").innerHTML =
+            books111.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 112-->
+
+    <tr>
+      <td>112</td>
+      <td id="112-autor">
+        <script>document.getElementById("112-autor").innerHTML =
+            books112.Autor;
+        </script>
+      </td>
+      <td id="112-nombre">
+        <script>document.getElementById("112-nombre").innerHTML =
+            books112.Nombre;
+        </script>
+      </td>
+      <td id="112-editorial">
+        <script>document.getElementById("112-editorial").innerHTML =
+            books112.Editorial;
+        </script>
+      </td>
+      <td id="112-disponibilidad">
+        <script>document.getElementById("112-disponibilidad").innerHTML =
+            books112.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 113-->
+
+    <tr>
+      <td>113</td>
+      <td id="113-autor">
+        <script>document.getElementById("113-autor").innerHTML =
+            books113.Autor;
+        </script>
+      </td>
+      <td id="113-nombre">
+        <script>document.getElementById("113-nombre").innerHTML =
+            books113.Nombre;
+        </script>
+      </td>
+      <td id="113-editorial">
+        <script>document.getElementById("113-editorial").innerHTML =
+            books113.Editorial;
+        </script>
+      </td>
+      <td id="113-disponibilidad">
+        <script>document.getElementById("113-disponibilidad").innerHTML =
+            books113.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 114-->
+
+    <tr>
+      <td>114</td>
+      <td id="114-autor">
+        <script>document.getElementById("114-autor").innerHTML =
+            books114.Autor;
+        </script>
+      </td>
+      <td id="114-nombre">
+        <script>document.getElementById("114-nombre").innerHTML =
+            books114.Nombre;
+        </script>
+      </td>
+      <td id="114-editorial">
+        <script>document.getElementById("114-editorial").innerHTML =
+            books114.Editorial;
+        </script>
+      </td>
+      <td id="114-disponibilidad">
+        <script>document.getElementById("114-disponibilidad").innerHTML =
+            books114.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 115-->
+
+    <tr>
+      <td>115</td>
+      <td id="115-autor">
+        <script>document.getElementById("115-autor").innerHTML =
+            books100.Autor;
+        </script>
+      </td>
+      <td id="115-nombre">
+        <script>document.getElementById("115-nombre").innerHTML =
+            books115.Nombre;
+        </script>
+      </td>
+      <td id="115-editorial">
+        <script>document.getElementById("115-editorial").innerHTML =
+            books100.Editorial;
+        </script>
+      </td>
+      <td id="115-disponibilidad">
+        <script>document.getElementById("115-disponibilidad").innerHTML =
+            books115.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 116-->
+
+    <tr>
+      <td>116</td>
+      <td id="116-autor">
+        <script>document.getElementById("116-autor").innerHTML =
+            books116.Autor;
+        </script>
+      </td>
+      <td id="116-nombre">
+        <script>document.getElementById("116-nombre").innerHTML =
+            books116.Nombre;
+        </script>
+      </td>
+      <td id="116-editorial">
+        <script>document.getElementById("116-editorial").innerHTML =
+            books116.Editorial;
+        </script>
+      </td>
+      <td id="116-disponibilidad">
+        <script>document.getElementById("116-disponibilidad").innerHTML =
+            books116.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO 117-->
+    <tr>
+      <td>117</td>
+      <td id="117-autor">
+        <script>document.getElementById("117-autor").innerHTML =
+            books117.Autor;
+        </script>
+      </td>
+      <td id="117-nombre">
+        <script>document.getElementById("117-nombre").innerHTML =
+            books117.Nombre;
+        </script>
+      </td>
+      <td id="117-editorial">
+        <script>document.getElementById("117-editorial").innerHTML =
+            books117.Editorial;
+        </script>
+      </td>
+      <td id="117-disponibilidad">
+        <script>document.getElementById("117-disponibilidad").innerHTML =
+            books117.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+
+    <!-- OBJETO NÚMERO 118-->
+    <tr>
+      <td>118</td>
+      <td id="118-autor">
+        <script>document.getElementById("118-autor").innerHTML =
+            books118.Autor;
+        </script>
+      </td>
+      <td id="118-nombre">
+        <script>document.getElementById("118-nombre").innerHTML =
+            books118.Nombre;
+        </script>
+      </td>
+      <td id="118-editorial">
+        <script>document.getElementById("118-editorial").innerHTML =
+            books118.Editorial;
+        </script>
+      </td>
+      <td id="118-disponibilidad">
+        <script>document.getElementById("118-disponibilidad").innerHTML =
+            books118.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 119-->
+
+    <tr>
+      <td>119</td>
+      <td id="119-autor">
+        <script>document.getElementById("119-autor").innerHTML =
+            books119.Autor;
+        </script>
+      </td>
+      <td id="119-nombre">
+        <script>document.getElementById("119-nombre").innerHTML =
+            books119.Nombre;
+        </script>
+      </td>
+      <td id="119-editorial">
+        <script>document.getElementById("119-editorial").innerHTML =
+            books119.Editorial;
+        </script>
+      </td>
+      <td id="119-disponibilidad">
+        <script>document.getElementById("119-disponibilidad").innerHTML =
+            books119.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 120-->
+
+    <tr>
+      <td>120</td>
+      <td id="120-autor">
+        <script>document.getElementById("120-autor").innerHTML =
+            books100.Autor;
+        </script>
+      </td>
+      <td id="120-nombre">
+        <script>document.getElementById("120-nombre").innerHTML =
+            books120.Nombre;
+        </script>
+      </td>
+      <td id="120-editorial">
+        <script>document.getElementById("120-editorial").innerHTML =
+            books120.Editorial;
+        </script>
+      </td>
+      <td id="120-disponibilidad">
+        <script>document.getElementById("120-disponibilidad").innerHTML =
+            books120.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 121-->
+
+    <tr>
+      <td>121</td>
+      <td id="121-autor">
+        <script>document.getElementById("121-autor").innerHTML =
+            books121.Autor;
+        </script>
+      </td>
+      <td id="121-nombre">
+        <script>document.getElementById("121-nombre").innerHTML =
+            books121.Nombre;
+        </script>
+      </td>
+      <td id="121-editorial">
+        <script>document.getElementById("121-editorial").innerHTML =
+            books121.Editorial;
+        </script>
+      </td>
+      <td id="121-disponibilidad">
+        <script>document.getElementById("121-disponibilidad").innerHTML =
+            books121.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 122-->
+
+    <tr>
+      <td>122</td>
+      <td id="122-autor">
+        <script>document.getElementById("122-autor").innerHTML =
+            books122.Autor;
+        </script>
+      </td>
+      <td id="122-nombre">
+        <script>document.getElementById("122-nombre").innerHTML =
+            books122.Nombre;
+        </script>
+      </td>
+      <td id="122-editorial">
+        <script>document.getElementById("122-editorial").innerHTML =
+            books122.Editorial;
+        </script>
+      </td>
+      <td id="122-disponibilidad">
+        <script>document.getElementById("122-disponibilidad").innerHTML =
+            books122.Disponibilidad;
+        </script>
+      </td>
+    </tr><!-- OBJETO NÚMERO 123-->
+    <tr>
+      <td>123</td>
+      <td id="123-autor">
+        <script>document.getElementById("123-autor").innerHTML =
+            books123.Autor;
+        </script>
+      </td>
+      <td id="123-nombre">
+        <script>document.getElementById("123-nombre").innerHTML =
+            books123.Nombre;
+        </script>
+      </td>
+      <td id="123-editorial">
+        <script>document.getElementById("123-editorial").innerHTML =
+            books123.Editorial;
+        </script>
+      </td>
+      <td id="123-disponibilidad">
+        <script>document.getElementById("123-disponibilidad").innerHTML =
+            books123.Disponibilidad;
+        </script>
+      </td>
+    </tr>
+     <!--   
+ CREAR NUEVO OBJETO COPIAR EL CODIGO DE ABAJO HASTA ANTES DE LA FLECHA  Y PEGAR
+ LUEGO REEMPLZAR X POR EL ID EN TODOS LOS CAMPOS
+OBJETO NUMERO"X"
+<tr>
+  <td>"X"</td>
+  <td id="X-autor">
+    <script>document.getElementById("X-autor").innerHTML =
+        books123.Autor;
+    </script>
+  </td>
+  <td id="X-nombre">
+    <script>document.getElementById("X-nombre").innerHTML =
+        booksX.Nombre;
+    </script>
+  </td>
+  <td id="X-editorial">
+    <script>document.getElementById("X-editorial").innerHTML =
+        booksX.Editorial;
+    </script>
+  </td>
+  <td id="X-disponibilidad">
+    <script>document.getElementById("X-disponibilidad").innerHTML =
+        booksX.Disponibilidad;
+    </script>
+  </td>
+</tr>
+
+
+     -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </table>
+
+
+
+
+</body>
+
+</html>
